@@ -1,6 +1,13 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  // Reverse the word and check if it's equal to the original
+  return word === word.split('').reverse().join('');
 }
+
+// export the function so the test file can import it
+module.exports = isPalindrome;
+
+  // Write your algorithm here
+
 
 /* 
   Add your pseudocode here
@@ -22,4 +29,4 @@ if (require.main === module) {
   console.log("=>", isPalindrome("robot"));
 }
 
-module.exports = isPalindrome;
+
